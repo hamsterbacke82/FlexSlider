@@ -630,7 +630,7 @@
 
     // public methods
     slider.flexAnimate = function(target, pause, override, withSync, fromNav) {
-      if (!slider.vars.animationLoop && target !== slider.currentSlide) {
+      if (target !== slider.currentSlide) {
         slider.direction = (target > slider.currentSlide) ? "next" : "prev";
       }
 
